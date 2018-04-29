@@ -27,6 +27,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         addListenerOnButton() ;
     }
+    public void numberClick(char num){
+        if(getted==true && getA!=true) {
+            num1_txt.setText("");
+            num2_txt.setText("");
+            result.setText("");
+            getted = false;
+            getA=false;
+        }
+
+        if(fl == false) {
+            if (!num1_txt.getText().toString().equals("0"))
+                num1_txt.setText(num1_txt.getText().toString() + num);
+        }
+        else {
+            if (!num2_txt.getText().toString().equals("0"))
+                num2_txt.setText(num2_txt.getText().toString() + num);
+        }
+    }
 
     public void addListenerOnButton (){
         sum_btn  = (Button) findViewById(R.id.sum_btn);
@@ -55,22 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "1");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "1");
-                        }
+                        numberClick('1');
                     }
                 }
         );
@@ -79,22 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "2");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "2");
-                        }
+                        numberClick('2');
                     }
                 }
         );
@@ -103,22 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "3");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "3");
-                        }
+                        numberClick('3');
                     }
                 }
         );
@@ -127,22 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "4");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "4");
-                        }
+                        numberClick('4');
                     }
                 }
         );
@@ -151,22 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "5");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "5");
-                        }
+                        numberClick('5');
                     }
                 }
         );
@@ -175,22 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "6");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "6");
-                        }
+                        numberClick('6');
                     }
                 }
         );
@@ -199,22 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "7");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "7");
-                        }
+                        numberClick('7');
                     }
                 }
         );
@@ -223,22 +136,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "8");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "8");
-                        }
+                        numberClick('8');
                     }
                 }
         );
@@ -247,22 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "9");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "9");
-                        }
+                        numberClick('9');
                     }
                 }
         );
@@ -271,22 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(getted==true && getA!=true) {
-                            num1_txt.setText("");
-                            num2_txt.setText("");
-                            result.setText("");
-                            getted = false;
-                            getA=false;
-                        }
-
-                        if(fl == false) {
-                            if (!num1_txt.getText().toString().equals("0"))
-                                num1_txt.setText(num1_txt.getText().toString() + "0");
-                        }
-                        else {
-                            if (!num2_txt.getText().toString().equals("0"))
-                                num2_txt.setText(num2_txt.getText().toString() + "0");
-                        }
+                        numberClick('0');
                     }
                 }
         );
